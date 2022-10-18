@@ -25,6 +25,8 @@ public class miExcepcion extends Exception {
 			case 2:
 				mensaje="Es impar";
 				break;
+			case 3:
+				mensaje="Valor no válido.";
 			default:
 				mensaje="Excepcion no identificada";
 				break;
