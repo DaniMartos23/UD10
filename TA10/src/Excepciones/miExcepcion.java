@@ -19,7 +19,14 @@ public class miExcepcion extends Exception {
 			case 0:
 				mensaje="Esto es un objeto Exception";
 				break;
+			case 1:
+				mensaje="Es par";
+				break;
+			case 2:
+				mensaje="Es impar";
+				break;
 			default:
+				mensaje="Excepcion no identificada";
 				break;
 		}
 		return mensaje;
