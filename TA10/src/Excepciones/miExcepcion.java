@@ -1,0 +1,30 @@
+package Excepciones;
+
+public class miExcepcion extends Exception {
+
+	private int codigoexcepcion;
+	
+	public miExcepcion() {
+		super();
+	}
+	
+	public miExcepcion(int codigoerror) {
+		super();
+		this.codigoexcepcion=codigoerror;
+	}
+	@Override
+	public String getMessage() {
+		String mensaje="";
+		switch(this.codigoexcepcion) {
+			case 0:
+				mensaje="Esto es un objeto Exception";
+				break;
+			default:
+				break;
+		}
+		return mensaje;
+		
+	}
+
+
+}
